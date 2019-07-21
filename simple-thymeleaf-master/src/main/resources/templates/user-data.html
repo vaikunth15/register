@@ -1,0 +1,19 @@
+<html xmlns:th="https://thymeleaf.org">  
+     <p><font size ="5">DISPLAY</font> </p>
+
+    <table>  
+        <tr>  
+            <td><h4>Student Name: </h4></td>  
+            <td><h4 th:text="${student.name}"></h4></td>  
+        </tr>  
+        <tr>  
+            <td><h4>Age: </h4></td>  
+            <td><h4 th:text="${student.age}"></h4></td>  
+        </tr> 
+                <tr>  
+            <td><h4>Registration Number: </h4></td>  
+            <td><h4 th:text="${student.registrationNumber}"></h4></td>  
+        </tr>   
+    </table>  
+      <a th:href="@{http://localhost:8080/}">FOR MAIN MENU</a>
+</html> 
